@@ -8,7 +8,7 @@ import java.util.Locale;
 import static com.codeborne.selenide.Selenide.$;
 
 public class DataGeneration {
-    DataGeneration () {}
+    private DataGeneration () {}
 
     private static Faker faker = new Faker(new Locale("ru"));
     private static String firstname = faker.name().firstName();
@@ -22,7 +22,7 @@ public class DataGeneration {
     }
 
     public static String getCity() {
-        return city;
+        return "Барнаул";
     }
 
     public static String getPhone() {
